@@ -9,28 +9,30 @@
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=PT+Sans&display=swap" rel="stylesheet">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 </head> 
 <body>
     <header>
-        <picture>
-            <source srcset="img/pg_logo_1x.png" media="(max-width:767px)">
-            <img src="img/pg_logo_2x.png" alt="Pia Gajjar">
-          </picture>
-        <nav>
-            <ul>
-              <li><a href="index.html">Work</a></li>
-              <li><a href="about.html">About</a></li>
-              <li><a href="#contact">Contact</a></li>
-              <li><a href="moneyapp.html">MoneyApp Case Study</a></li>
-            </ul>
-          </nav>
+        <div class="container"> 
+            <picture>
+                <source srcset="img/pg_logo_1x.png" media="(max-width:767px)">
+                <img class="logo" src="img/pg_logo_2x.png" alt="Pia Gajjar">
+              </picture>
+            <nav>
+                <ul class="navigation">
+                  <li><a href="index.html">Work</a></li>
+                  <li><a href="about.html">About</a></li>
+                  <li><a href="#contact">Contact</a></li>
+                  <li><a href="moneyapp.html">MoneyApp Case Study</a></li>
+                </ul>
+              </nav>
+        </div>        
     </header>
     <main>
-        <div>
-            <div>
+        <div id="hero"> <!--Orange-->
+            <div class="container"> <!--Yellow-->
                 <h1>Hey, YOU!
                     <br>
                 <span>I'm Pia, a UX/UI designer and Web Developer based in San Francisco, CA.</span></h1>
@@ -38,19 +40,20 @@
                     in navigation. Proficient in design tools and technologies like Sketch, Adobe XD, Figma, HTML, CSS and 
                     Javascript, I aim to push boundaries of design!
                 </p>
-
             </div>
-            <div>
+        </div>
+        <div id="work"> <!--Orange-->
+            <div class="container"> <!--Yellow-->
                 <h2>My Work</h2>
-                <div>
-                    <div>
+                <div class="row"> <!--Dark Green-->
+                    <div> <!--Light Green-->
                         <picture>
                             <source srcset="img/moneyapp_1x.png" media="(max-width:767px)">
                             <img src="img/moneyapp_2x.png" alt="MoneyApp">
                         </picture>
 
                     </div>
-                    <div>
+                    <div> <!--Light Green-->
                         <h3>1. MoneyApp</h3>
                         <p>MoneyApp, is a payment application that helps with faster online payments, secure money 
                             transfers and a platform to invest in stocks/cryptocurrency. Its main purpose is to provide
@@ -63,10 +66,9 @@
                 </div>
             </div>
         </div>
-
     </main>
     <footer>
-        <div>
+        <div class="container">
              <h2>Get in touch!</h2>
              <p>Do you like my work or want to discuss opptunities? Call: <a href="tel:+15107095465">phone number.</a>
                  Looking forward to connecting with you!
@@ -91,7 +93,7 @@
             </a>
             </div>
             <p>Copyright Pia Gajjar 2023</p>
-            </div>
-            </footer>
+        </div>
+    </footer>
 </body>
 </html>
