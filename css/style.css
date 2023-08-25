@@ -1,3 +1,6 @@
+* {
+    box-sizing: border-box;
+  }
 body {
     font-family: 'PT Sans', sans-serif;
   }
@@ -34,14 +37,14 @@ body {
   img {
     width: 100%;
   }
-  a:visited { /* visited link */
+  nav > ul > li > a:visited { /* visited link */
     color: #9c08af;
   }
-  a:hover {
+  nav > ul > li > a:hover {
     color: #cc6540;
     text-decoration: underline; /* Underlining when hovering over a link */
   }
-  a:active { /* selected link */
+  nav > ul > li > a:active { /* selected link */
     color: #07b818;
   }
   .button {
@@ -67,4 +70,71 @@ body {
   .button.contact:hover {
     background-color: #ff7f50;
     color: #ffffff;
+  }
+  header {
+    background-color: #ff44c4;
+    /* padding: 10px;
+    margin: 10px; */
+    border-bottom: 3px solid #4a4a4a;
+    position: fixed;
+  }
+  selector {
+    margin: 0 auto; 
+    /* No spacing to top and bottom and auto spacing to left and right */
+  }
+
+  /* Layout styling */
+
+  .container {
+    padding: 0 15px;
+  }
+  .row {
+    margin: 25px 0; /* 25px top and bottom, 0 left and right */
+  }
+  #work .row { padding-bottom: 25px; border-bottom: 1px solid #4a4a4a; }
+  #hero h1 {
+    text-align: center; /* Centers text */
+  }
+  .logo {
+    max-width: 250px;
+    text-align: center;
+  }
+  header {
+    background-color: #ffe4c4;
+    text-align: center;
+    /* padding: 10px 0; */
+    position: fixed;
+    width: 100%;
+  }
+  nav > ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  nav > ul > li {
+    display: inline-block;
+  }
+  nav > ul > li > a {
+    padding: 0 15px;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #4a4a4a;
+  }
+  #hero {
+    background-color: #ffe4c4;
+    padding: 20px 0;
+    display: inline-block;
+    width: 100%;
+  }
+  .css-box-shadow{
+	/*start ------------*/
+	width: [object Object]px; 
+	height: [object Object]px; 
+	background: #F8F8F8; 
+	border: solid #FFFFFF 1px; 
+	box-shadow: 16px 25px 85px rgba(82, 74, 82, 0.5)  ; 
+	-webkit-box-shadow: 16px 25px 85px rgba(82, 74, 82, 0.5)  ; 
+	-moz-box-shadow: 16px 25px 85px rgba(82, 74, 82, 0.5)  ; 
+}
+main {
+    padding-top: 360px;
   }
