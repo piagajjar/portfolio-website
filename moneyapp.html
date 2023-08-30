@@ -15,7 +15,8 @@
 </head> 
 <body>
     <header>
-        <div class="container"> 
+        <div class="container">
+            <div class="navtoggle" id="myNavtoggle"></div>
             <picture>
                 <source srcset="img/pg_logo_1x.png" media="(max-width:767px)">
                 <img class="logo" src="img/pg_logo_2x.png" alt="Pia Gajjar">
@@ -24,8 +25,9 @@
                 <ul class="navigation">
                   <li><a href="index.html">Work</a></li>
                   <li><a href="about.html">About</a></li>
-                  <li><a href="#contact">Contact</a></li>
+                  <li><a href="#contact" onclick="menuToggle()">Contact</a></li>
                   <li><a href="moneyapp.html">MoneyApp Case Study</a></li>
+                  <li><a href="javascript:void(0);" class="icon" onclick="menuToggle()"><i class="fas fa-bars"></i></a></li>
                 </ul>
               </nav>
         </div>        
@@ -528,6 +530,10 @@
             <p>Copyright Pia Gajjar 2023</p>
         </div>
     </footer>
+    <script
+  src="https://code.jquery.com/jquery-3.7.1.min.js"
+  integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+  crossorigin="anonymous"></script>
     <script src="js/scripts.js"></script>
 </body>
 </html>
