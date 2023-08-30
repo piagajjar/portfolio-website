@@ -35,6 +35,11 @@
   img {
     width: 100%;
   }
+  nav > ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
   nav > ul > li > a:visited { /* visited link */
     color: #9c08af;
   }
@@ -73,8 +78,8 @@
   }
   header {
     background-color: #ff44c4;
-    /* padding: 10px;
-    margin: 10px; */
+    padding: 10px 0 4px;
+    /* margin: 10px;  */
     border-bottom: 3px solid #4a4a4a;
     position: fixed;
   }
@@ -96,12 +101,12 @@
     text-align: center; /* Centers text */
   }
   .logo {
-    max-width: 250px;
+    max-width: 150px;
     text-align: center;
   }
   header {
     background-color: #ffe4c4;
-    text-align: center;
+    /* text-align: center; */
     /* padding: 10px 0; */
     position: fixed;
     width: 100%;
@@ -110,15 +115,41 @@
     list-style-type: none;
     padding: 0;
   }
-  nav > ul > li {
-    display: inline-block;
-  }
   nav > ul > li > a {
     padding: 0 15px;
     text-transform: uppercase;
     font-weight: 700;
     color: #4a4a4a;
   }
+  .navtoggle li:not(:last-child) {
+    display: none;
+  }
+  .navtoggle, .navtoggle.responsive {
+    position: relative;
+  }
+  .navtoggle li .icon {
+    position: absolute;
+    right: 0;
+    top: 2px;
+    font-size: 20px;
+    padding-right: 0;
+  }
+  .navtoggle.responsive li  {
+    display: block;
+  }
+  .navtoggle.responsive nav {
+    padding: 24px 0 0;
+  }
+  .navtoggle.responsive li  {
+    display: block;
+    padding: 10px 0;
+    border-top: 1px solid rgba(255,127,80,0.5);
+  }
+  
+  .navtoggle.responsive li:last-child  {
+    padding: 0 0 10px;
+  }
+ 
   #hero {
     background-color: #ffe4c4;
     padding: 20px 0;
@@ -136,7 +167,7 @@
 	-moz-box-shadow: 16px 25px 85px rgba(82, 74, 82, 0.5)  ; 
 }
 main {
-    padding-top: 360px;
+    padding-top: 310px;
   }
   [class*="col-"] {
     float: left;
@@ -155,7 +186,24 @@ Medium devices (640px and larger)
     text-align: unset;
     padding: 50px 0 13px;
   }
-
+  .logo {
+    max-width: 250px;
+    text-align: center;
+  }
+  nav > ul > li {
+    display: inline-block;
+  }
+  
+  .navtoggle li:not(:last-child) {
+    display: inline-block;
+  }
+  .navtoggle li:last-child {
+    display: none;
+  }
+  nav > ul {
+    margin: 1em 0;
+  }
+  
   nav {
     width: auto;
     float: right;
