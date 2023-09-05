@@ -52,8 +52,8 @@
   }
   .button {
     display: inline-block; /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
-    background-color: #bbea2f;
-    color: #070707; /* needed to override the default link color */
+    background-color: #641141;
+    color: #d3c8c8; /* needed to override the default link color */
     font-weight: 400;
     padding: 10px;
     border-radius: 3px;
